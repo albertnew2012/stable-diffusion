@@ -1,0 +1,8 @@
+# Ignore everything inside any *_outputs folder
+*_outputs/*
+
+# But keep any .gitkeep file in them
+!*_outputs/.gitkeep
+
+**/data
+!data/dog.jpg

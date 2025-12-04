@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: CLIP",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/clip.py",
+            "console": "internalConsole",
+            "args": [
+            ],
+            "stopOnEntry": true,
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
