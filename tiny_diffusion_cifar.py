@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+DDPM = Denoising Diffusion Probabilistic Model.
+
 tiny_diffusion_cifar.py
 denoising diffusion probabilistic models
 A minimal DDPM-style diffusion model on CIFAR-10.

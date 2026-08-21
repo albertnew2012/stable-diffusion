@@ -7,10 +7,48 @@
             "request": "launch",
             "program": "${workspaceFolder}/clip.py",
             "console": "internalConsole",
-            "args": [
-            ],
+            "args": [],
             "stopOnEntry": true,
             "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: VAE Inference (interpolate 1 -> 0)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/vae_inference.py",
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--mode",
+                "interpolate",
+                "--digits",
+                "1",
+                "0",
+                "--steps",
+                "12"
+            ],
+            "stopOnEntry": true,
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: VAE kNN Probe (test image 42)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/vae_knn_probe.py",
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--probe",
+                "42"
+            ],
+            "stopOnEntry": true,
+            "justMyCode": true,
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
             }
